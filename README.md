@@ -1,4 +1,4 @@
-# Jiggler in robotgo
+# Jiggler in robotgo [![Go](https://github.com/f01c33/jiggler/actions/workflows/go.yml/badge.svg)](https://github.com/f01c33/jiggler/actions/workflows/go.yml)
 
 ### usage:
 Install robotgo's required libraries https://github.com/go-vgo/robotgo
