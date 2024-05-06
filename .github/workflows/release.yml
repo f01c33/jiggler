@@ -21,7 +21,7 @@ jobs:
         goarch: amd64
         pre_command: |
           # gcc
-          sudo apt install gcc libc6-dev
+          sudo apt install gcc libc6-dev pkg-config
           
           # x11
           sudo apt install libx11-dev xorg-dev libxtst-dev
@@ -47,7 +47,7 @@ jobs:
         goarch: arm64
         pre_command: |
           # gcc
-          sudo apt install gcc libc6-dev
+          sudo apt install gcc libc6-dev pkg-config
           
           # x11
           sudo apt install libx11-dev xorg-dev libxtst-dev
@@ -74,7 +74,7 @@ jobs:
         goarch: amd64
         pre_command: |
           # gcc
-          sudo apt install gcc libc6-dev
+          sudo apt install gcc libc6-dev pkg-config
           
           # x11
           sudo apt install libx11-dev xorg-dev libxtst-dev
@@ -101,7 +101,7 @@ jobs:
         goarch: arm64
         pre_command: |
           # gcc
-          sudo apt install gcc libc6-dev
+          sudo apt install gcc libc6-dev pkg-config
           
           # x11
           sudo apt install libx11-dev xorg-dev libxtst-dev
@@ -128,7 +128,7 @@ jobs:
         goarch: arm64
         pre_command: |
           # gcc
-          sudo apt install gcc libc6-dev
+          sudo apt install gcc libc6-dev pkg-config
           
           # x11
           sudo apt install libx11-dev xorg-dev libxtst-dev
@@ -155,7 +155,7 @@ jobs:
         goarch: amd64
         pre_command: |
           # gcc
-          sudo apt install gcc libc6-dev
+          sudo apt install gcc libc6-dev pkg-config
           
           # x11
           sudo apt install libx11-dev xorg-dev libxtst-dev
