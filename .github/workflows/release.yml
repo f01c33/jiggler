@@ -19,6 +19,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: linux
         goarch: amd64
+        ldflags: $(pkg-config --libs X11)
         pre_command: |
           # gcc
           sudo apt install gcc libc6-dev pkg-config
