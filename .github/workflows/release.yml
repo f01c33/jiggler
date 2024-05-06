@@ -19,7 +19,6 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: linux
         goarch: amd64
-        ldflags: $(pkg-config --libs X11)
         pre_command: |
           # gcc
           sudo apt install gcc libc6-dev pkg-config
@@ -36,6 +35,8 @@ jobs:
           
           # GoHook
           sudo apt install xcb libxcb-xkb-dev x11-xkb-utils libx11-xcb-dev libxkbcommon-x11-dev libxkbcommon-dev libx11-dev
+          
+          go get -u github.com/go-vgo/robotgo
   release-linux-arm64:
     name: release linux/arm64
     runs-on: ubuntu-latest
@@ -62,7 +63,8 @@ jobs:
           
           # GoHook
           sudo apt install xcb libxcb-xkb-dev x11-xkb-utils libx11-xcb-dev libxkbcommon-x11-dev libxkbcommon-dev libx11-dev
-
+          
+          go get -u github.com/go-vgo/robotgo
   release-windows-amd64:
     name: release windows/amd64
     runs-on: ubuntu-latest
@@ -89,7 +91,8 @@ jobs:
           
           # GoHook
           sudo apt install xcb libxcb-xkb-dev x11-xkb-utils libx11-xcb-dev libxkbcommon-x11-dev libxkbcommon-dev libx11-dev
-
+          
+          go get -u github.com/go-vgo/robotgo
   release-windows-arm64:
     name: release windows/arm64
     runs-on: ubuntu-latest
@@ -116,7 +119,8 @@ jobs:
           
           # GoHook
           sudo apt install xcb libxcb-xkb-dev x11-xkb-utils libx11-xcb-dev libxkbcommon-x11-dev libxkbcommon-dev libx11-dev
-
+          
+          go get -u github.com/go-vgo/robotgo
   release-darwin-arm64:
     name: release darwin/arm64
     runs-on: ubuntu-latest
@@ -143,7 +147,8 @@ jobs:
           
           # GoHook
           sudo apt install xcb libxcb-xkb-dev x11-xkb-utils libx11-xcb-dev libxkbcommon-x11-dev libxkbcommon-dev libx11-dev
-
+          
+          go get -u github.com/go-vgo/robotgo
   release-darwin-amd64:
     name: release darwin/amd64
     runs-on: ubuntu-latest
@@ -170,4 +175,5 @@ jobs:
           
           # GoHook
           sudo apt install xcb libxcb-xkb-dev x11-xkb-utils libx11-xcb-dev libxkbcommon-x11-dev libxkbcommon-dev libx11-dev
-
+          
+          go get -u github.com/go-vgo/robotgo
