@@ -19,7 +19,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: linux
         goarch: amd64
-        pre-command: |
+        pre_command: |
           # gcc
           sudo apt install gcc libc6-dev
           
@@ -45,7 +45,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: linux
         goarch: arm64
-        pre-command: |
+        pre_command: |
           # gcc
           sudo apt install gcc libc6-dev
           
@@ -72,7 +72,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: windows
         goarch: amd64
-        pre-command: |
+        pre_command: |
           # gcc
           sudo apt install gcc libc6-dev
           
@@ -99,7 +99,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: windows
         goarch: arm64
-        pre-command: |
+        pre_command: |
           # gcc
           sudo apt install gcc libc6-dev
           
@@ -126,7 +126,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: darwin
         goarch: arm64
-        pre-command: |
+        pre_command: |
           # gcc
           sudo apt install gcc libc6-dev
           
@@ -153,7 +153,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: darwin
         goarch: amd64
-        pre-command: |
+        pre_command: |
           # gcc
           sudo apt install gcc libc6-dev
           
