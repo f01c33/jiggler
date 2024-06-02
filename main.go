@@ -15,8 +15,8 @@ func main() {
 	sx, _ := robotgo.GetScreenSize()
 	for {
 		if isJiggling {
-			robotgo.Move(sx, 10)
-			robotgo.Move(sx, 11)
+			robotgo.MoveRelative(0, 1)
+			robotgo.MoveRelative(0, -1)
 		}
 		time.Sleep(time.Second)
 		locX, locY := robotgo.Location()
@@ -25,6 +25,7 @@ func main() {
 				break
 			} else {
 				isJiggling = !isJiggling
+				time.Sleep(time.Second * 3)
 			}
 		}
 	}
